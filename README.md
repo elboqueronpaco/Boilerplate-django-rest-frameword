@@ -43,3 +43,21 @@ Tenemos instalado el paquete django-environ que se encuentra en requirementes.tx
 ```py
 import environ
 ```
+
+2. Necesitamos inicializar una instancia de `environ`:
+
+```py
+env = environ.Env()
+environ.Env.read_env()
+```
+
+## Cors 
+
+Para las cors instalamos la bibioteca  django-cors-headers y luego debes agregarlo a tu aplicacion en settings.py
+```py
+THIRD_PARTY_APP=[
+  'corsheaders',
+]
+```
+
+Además, necesitas agregar un middleware para CORS en el settings.py. Asegurate de que este delante del middleware `CommonMiddleware`
