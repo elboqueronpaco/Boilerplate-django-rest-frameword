@@ -50,7 +50,7 @@ DJANGO_APPS = [
 
 
 PROJECT_APPS = [
-    
+    'apps.user',
 ]
 
 THIRD_PARTY_APPS = [
@@ -211,7 +211,7 @@ SIMPLE_JWT = {
     "AUTH_TOKEN_CLASSES": ("rest_framework_simplejwt.tokens.AccessToken",),
 }
 
-#AUTH_USER_MODEL = "user.UserAccount"
+AUTH_USER_MODEL = "user.UserAccount"
 
 
 # Djoser
